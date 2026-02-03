@@ -1,0 +1,16 @@
+---
+alwaysApply: true
+description: shadcn UI for all UI elements; init with npx shadcn@latest init; add missing components with npx shadcn@latest add <component-name>
+---
+
+# shadcn UI
+
+This project uses **shadcn UI** for all UI elements.
+
+- **If shadcn UI is not initialized** in the project, run: `npx shadcn@latest init`
+- **If a particular component is not installed**, use: `npx shadcn@latest add <component-name>` (e.g. to install the button component: `npx shadcn@latest add button`). Do not implement the component manually—add it via the CLI.
+- Configuration lives in [components.json](mdc:components.json). The project uses the **new-york** style, RSC, TSX, Tailwind with CSS variables, and the **stone** base color.
+- Use the `cn()` utility from [src/lib/utils.ts](mdc:src/lib/utils.ts) for merging Tailwind classes.
+- UI components are under `@/components/ui` (see [components.json](mdc:components.json) aliases).
+
+Do not introduce other UI libraries for standard components; use shadcn UI.
